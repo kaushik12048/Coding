@@ -1,0 +1,14 @@
+n=input()
+M=[[0 for x in xrange(n)] for x in xrange(n)]
+sum=0
+for i in range(0,n):
+     s=map(int, raw_input().split())
+     for j in range(0,n):
+          M[i][j]=s[j]
+          if(i==j):
+             sum=sum+s[j]
+print sum
+for i in range(0,n):
+     for j in range(0,n):
+          print M[i][j],
+     print 
